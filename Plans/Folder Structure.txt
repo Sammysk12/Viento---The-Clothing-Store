@@ -1,0 +1,28 @@
+1. Components -----
+                  |
+                  |>Admin      - Admin Dashboard, Order Management, User Management, etc. 
+                  |
+                  |
+                  |>Cart       - Checkout, Paypal Button, etc.
+                  |
+                  |
+                  |>Common     - Header, Footer, Navbar, etc.
+                  |
+                  |
+                  |>Layout     - User Layout, Hero Layout, Cart Drawer 
+                  |
+                  |
+                  |>Products   - Product tree, Product details
+
+
+
+
+
+
+2.Pages
+
+-Home Page
+-Admin Home Page
+-Login Page
+-Collection Page
+                  
