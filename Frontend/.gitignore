@@ -8,6 +8,6 @@ backend/node_modules
 
 
 #Environment variables
-frontend/.env
-backend/.env
+Frontend/.env
+Backend/.env
 
