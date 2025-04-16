@@ -16,8 +16,9 @@ const app = express();
 app.use(express.json());
 
 //to Communicate with cross origin (with react server)   there are 2 different ports are running one is for react application and other is this express server
-app.use(cors());
-
+app.use(cors({
+    origin: '*'
+  }));
 
 //for user routes
 const userRoutes = require('./Routes/userRoutes')
