@@ -81,7 +81,7 @@ export const removeFromCart = createAsyncThunk('cart/removefromCart' , async({pr
     try {
         const response = await axios({
             method: "DELETE",
-            url : `${import.meta.env.VITE_BACKEND_URL}`,
+            url : `${import.meta.env.VITE_BACKEND_URL}/api/cart/`,
             data : {
                 productId, 
                 guestId,

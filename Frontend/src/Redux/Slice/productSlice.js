@@ -2,6 +2,8 @@ import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 
 import axios from 'axios'
 
+const URL = `${import.meta.env.VITE_BACKEND_URL}`
+
 //Async thunk to fetch products by collection and optional filters;
 
 export const fetchProductByFilters = createAsyncThunk("products/fetchByFilters", async({collection, size, color, gender, minPrice, maxPrice, sortBy, search, category, material, brand, limit,} ,{rejectWithValue}) =>{
@@ -21,7 +23,9 @@ export const fetchProductByFilters = createAsyncThunk("products/fetchByFilters",
     if(limit) query.append('limit', limit)
 
 
-    const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}?${query.toString()}`)
+    const response = await axios.get(`${URL}/api/products?${query.toString()}`)
+    console.log(response);
+
 
     return response.data;
    } catch (error) {
