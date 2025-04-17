@@ -33,7 +33,6 @@ export const loginUser = createAsyncThunk("auth/loginUser", async (userData, {re
             
         localStorage.setItem("userInfo", JSON.stringify(response.data.user))
         localStorage.setItem('userToken', response.data.token);
-        console.log(response.data.token)
         return response.data.user;// return the user object from the response
 
     } catch (error) {
